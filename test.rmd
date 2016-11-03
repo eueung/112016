@@ -1,4 +1,4 @@
-$$$ cover-01 %pretitle Pre-Title % titleprop Sample Title % authorprop [Eueung Mulyana](https://github.com/eueung) % linkprop http://eueung.github.io/docker-stuff/rtl-sdr % otherprop CodeLabs | [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) % bkgimg bkgs/daun.jpg
+$$$ cover-01 %pretitle Pre-Title 3 % titleprop Sample Title % authorprop [Eueung Mulyana](https://github.com/eueung) % linkprop http://eueung.github.io/docker-stuff/rtl-sdr % otherprop CodeLabs | [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) % bkgimg bkgs/daun.jpg
 
 ---
 class: column_t1 middle
