@@ -31,11 +31,26 @@
   border-left: white solid 0.5em;
   border-right: white solid 0em;
 }
-
 .boxtitle2 {
+  padding:1em;
+  text-align: left;
+  border-left: white solid 0.5em;
+  border-right: white solid 0em;
+  border-bottom: white solid 0.5em;
+}
+
+.boxtitle3 {
   padding:1em;
   text-align: center;
   border-left: white solid 0em;
   border-right: white solid 0.5em;
+}
+.boxtitle4 {
+  padding:1em;
+  text-align: left;
+  border-bottom: #999 dashed 2px;
+}
+.add-left-border {
+  border-left: white solid 0.5em;
 }
 
