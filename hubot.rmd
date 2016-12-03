@@ -1,0 +1,360 @@
+$$$ cover-05-gen %split 40 %maxh 450 %opc 7 %pretitle Introduction % titleprop .fsize95[Hubot] % authorprop [Eueung Mulyana](https://github.com/eueung) % linkprop https://eueung.github.io/112016/hubot % otherprop CodeLabs | [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) % bkgimg bkgs/kabel.jpg % logopic images/hubot4.png
+---
+$$$ outline % fsize fonth4 % e1 |Introduction| % e2 |Quick Start| % e3 |Hubot + Telegram| 
+
+---
+$$$ cover-05-section-gen %split 30 %maxh 550 %opc 7 % titleprop .fsize95[Introduction] % otherprop [A Customizable, Life Embetterment Robot](https://hubot.github.com/) % bkgimg bkgs/kabel.jpg % logopic images/hubot4.png
+
+---
+background-image: url(images/hubot-github.jpg)
+
+---
+$$$ minion-right %img m2-910.jpg %align center %title #What is Hubot? %text1 ...
+
+---
+$$$ minion1-left % align center % title #Hubot? Well... % text1 **Hubot** is your company's robot. Install him in your company to dramatically **improve** and .uline[reduce] employee efficiency.
+
+---
+$$$ jackie-left % align center % title #Nooo!! % text1 Seriously atuh prens..
+
+---
+$$$ part-1 % split 60 % color1 t1 % align1 right %title1 #Hubot
+.fonth5[
+GitHub, Inc., wrote the first version of Hubot to **automate** their company .uline[chat room]. Hubot knew how to .bluelight[**deploy the site**], automate .bluelight[**a lot of tasks**], and be .uline[a source of fun] in the company. Eventually he grew to become a formidable force in GitHub. But he led a private, messy life. So he's then  rewritten.]
+
+Today's version of Hubot is open source, written in .yellow[**CoffeeScript**] on Node.js, and easily deployed on platforms like Heroku. More importantly, Hubot is a standardized way to share scripts between everyone's robots.
+
+$$$ part-2 % color2 t2 % align2 defaultalign %text2 ###What can Hubot do? 
+
+Hubot is shipped with a small group of core scripts: things like **posting images**, translating languages, and integrating with .uline[Google Maps]. There's also a repository of community Hubot scripts and an organization of community Hubot packages that you can add to your own robot.
+
+The real fun happens when you add **your own scripts**. Be sure to .uline[personalize] your Hubot, too; your company's robot should be a place full of inside jokes, custom integrations, and general merriment.
+
+Ref: [HUBOT](https://hubot.github.com/)
+
+$$$ part-3 
+
+---
+$$$ slide-one % col t1 % title #.fonth5[CoffeeScript?] % text .fonth5[Kalem! Keine Angst! Stay Cool, Don't Panic! No Problemo.]
+
+---
+$$$ part-1 % split 40 % color1 t1 % align1 right %title1 #CoffeeScript
+.fonth5[
+CoffeeScript is a little language that **compiles** into JavaScript. CoffeeScript is an attempt to expose .uline[the good parts] of JavaScript in a simple way.
+]
+The golden rule of CoffeeScript is: "It's just JavaScript". The code compiles one-to-one into the equivalent JS, and there is no interpretation at runtime. You can use any existing JavaScript library seamlessly from CoffeeScript (and vice-versa). The compiled output is readable and pretty-printed, will work in every JavaScript runtime, and tends to run as fast or faster than the equivalent handwritten JavaScript.
+
+$$$ part-2 % color2 t2 % align2 center 
+
+#### CoffeeScript
+
+.align-left[
+```coffeescript
+fill = (container, liquid = "coffee") ->
+  "Filling the #{container} with #{liquid}..."
+```
+]
+
+#### Compiled JavaScript
+
+.align-left[
+```javascript
+var fill;
+
+fill = function(container, liquid) {
+  if (liquid == null) {
+    liquid = "coffee";
+  }
+  return "Filling the " + container + " with " + liquid + "...";
+};
+```
+
+Ref: [CoffeeScript](http://coffeescript.org/)
+]
+$$$ part-3 
+
+---
+$$$ cover-05-section-gen %split 30 %maxh 550 %opc 7 % titleprop .fsize95[Quick Start] % bkgimg bkgs/kabel.jpg % logopic images/hubot4.png
+
+---
+$$$ part-1 % split 50 % color1 t1 % align1 right %title1 #Install &amp; Scaffold
+.align-left[
+```bash
+*$ node -v
+v6.9.1
+*$ npm -v
+3.10.8
+
+*$ sudo npm install -g coffee-script yo generator-hubot
+
+*$ mkdir ltkabot && cd ltkabot && yo hubot
+```
+]
+$$$ part-2 % color2 t2 % align2 left 
+
+```bash
+                     _____________________________  
+                    /                             \ 
+   //\              |      Extracting input for    |
+  ////\    _____    |   self-replication process   |
+ //////\  /_____\   \                             / 
+ ======= |[^_/\_]|   /----------------------------  
+  |   | _|___@@__|__                                
+  +===+/  ///     \_\                               
+   | |_\ /// HUBOT/\\                             
+   |___/\//      /  \\                            
+         \      /   +---+                            
+
+? Owner eueung@gmail.com
+? Bot name ltkabot
+? Description A Bot for LTKA
+*? Bot adapter telegram
+   create bin/hubot
+   ...
+                     _____________________________  
+ _____              /                             \ 
+ \    \             |   Self-replication process   |
+ |    |    _____    |          complete...         |
+ |__\\|   /_____\   \     Good luck with that.    / 
+   |//+  |[^_/\_]|   /----------------------------  
+  |   | _|___@@__|__                                
+  +===+/  ///     \_\                               
+   | |_\ /// HUBOT/\\                             
+   |___/\//      /  \\                            
+
+ltkabot@0.0.0 /home/em/ltkabot
+*|-- hubot@2.19.0 
+|-|-- async@0.9.2 
+```
+
+$$$ part-3 
+
+---
+$$$ part-1 % split 40 % color1 t2 % align1 right %title1 #Check
+.align-left[
+```bash
+*$ tree -L 1
+.
+|-- bin
+|-- external-scripts.json
+|-- hubot-scripts.json
+|-- node_modules
+|-- package.json
+|-- Procfile
+|-- README.md
+|-- scripts
+
+3 directories, 5 files
+# -------------------------------------
+*ltkabot$ cat external-scripts.json 
+[
+  "hubot-diagnostics",
+  "hubot-help",
+  "hubot-heroku-keepalive",
+  "hubot-google-images",
+  "hubot-google-translate",
+  "hubot-pugme",
+  "hubot-maps",
+  "hubot-redis-brain",
+  "hubot-rules",
+  "hubot-shipit"
+]
+```
+]
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+```bash
+*ltkabot$ cat package.json 
+{
+  "name": "ltkabot",
+  "version": "0.0.0",
+  "private": true,
+  "author": "eueung@gmail.com",
+  "description": "A Bot for LTKA",
+  "dependencies": {
+    "hubot": "^2.19.0",
+    "hubot-diagnostics": "0.0.1",
+    "hubot-google-images": "^0.2.6",
+    "hubot-google-translate": "^0.2.0",
+    "hubot-help": "^0.2.0",
+    "hubot-heroku-keepalive": "^1.0.2",
+    "hubot-maps": "0.0.2",
+    "hubot-pugme": "^0.1.0",
+    "hubot-redis-brain": "0.0.3",
+    "hubot-rules": "^0.1.1",
+    "hubot-scripts": "^2.17.2",
+    "hubot-shipit": "^0.2.0",
+    "hubot-telegram": "^0.1.2"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
+
+*ltkabot$ ll scripts/
+total 12
+drwxrwxr-x 2 em em 4096 Des  2 09:56 ./
+drwxrwxr-x 5 em em 4096 Des  2 09:56 ../
+*-rw-r--r-- 1 em em 3360 Mei 20  2016 example.coffee
+```
+
+$$$ part-3 
+
+---
+$$$ part-1 % split 30 % color1 t1 % align1 right %title1 #Run &amp; Test
+.fonth5[Shell Adapter]
+
+$$$ part-2 % color2 t2 % align2 defaultalign 
+```bash
+*ltkabot$ bin/hubot 
+ltkabot>
+
+*ltkabot> help
+usage:
+history 
+exit, \q - close shell and exit
+help, \? - print this usage
+clear, \c - clear the terminal screen
+```
+
+```bash
+*ltkabot> ltkabot ping
+ltkabot> PONG
+
+*ltkabot> ltkabot time
+ltkabot> Server time is: Sat Dec 03 2016 06:54:29 GMT+0700 (WIB)
+
+*ltkabot> ltkabot ship it
+ltkabot> http://img70.imageshack.us/img70/9615/cutesquirrels15ac7.jpg
+
+*ltkabot> ltkabot the rules
+ltkabot> 
+0. A robot may not harm humanity, or, by inaction, allow humanity to come to harm.
+1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+2. A robot must obey any orders given to it by human beings, except where such orders would conflict with the First Law.
+3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
+```
+
+$$$ part-3 
+
+---
+$$$ part-1 % split 30 % color1 t1 % align1 right %title1 #Run &amp; Test
+
+
+$$$ part-2 % color2 t2 % align2 defaultalign 
+
+```bash
+*ltkabot> ltkabot help
+ltkabot> 
+Shell: 
+ltkabot adapter - Reply with the adapter
+ltkabot animate me <query> - The same thing as `image me`, except adds a few parameters to try to return an animated GIF instead.
+ltkabot echo <text> - Reply back with <text>
+ltkabot help - Displays all of the help commands that Hubot knows about.
+ltkabot help <query> - Displays all help commands that match <query>.
+ltkabot image me <query> - The Original. Queries Google Images for <query> and returns a random top result.
+ltkabot map me <query> - Returns a map view of the area returned by `query`.
+ltkabot mustache me <url|query> - Adds a mustache to the specified URL or query result.
+ltkabot ping - Reply with pong
+ltkabot pug bomb N - get N pugs
+ltkabot pug me - Receive a pug
+ltkabot the rules - Make sure hubot still knows the rules.
+ltkabot time - Reply with current time
+ltkabot translate me <phrase> - Searches for a translation for the <phrase> and then prints that bad boy out.
+ltkabot translate me from <source> into <target> <phrase> - Translates <phrase> from <source> into <target>. Both <source> and <target> are optional
+ship it - Display a motivation squirrel
+```
+
+$$$ part-3 
+
+---
+$$$ cover-05-section-gen %split 30 %maxh 550 %opc 7 % titleprop .fsize95[Hubot + Telegram] % bkgimg bkgs/kabel.jpg % logopic images/hubot4.png
+
+---
+$$$ pic-two % split 50 % img_l images/telegram.png % img_r images/hubot4.png %col_l t2 %col_r t1
+
+---
+$$$ part-1 % split 40 % color1 t1 % align1 right %title1 #hubot-telegram
+
+
+$$$ part-2 % color2 t2 % align2 defaultalign 
+.fonth5[
+1. Create a new Telegram Bot, via [BotFather](https://core.telegram.org/bots#botfather)
+1. If not previously installed with Yeoman, install the adapter: `npm install --save hubot-telegram`
+1. Run Hubot with the adapter.
+]
+
+```bash
+
+*TELEGRAM_TOKEN=<token> bin/hubot -a telegram -n udjang
+ 
+```
+
+$$$ part-3 
+
+---
+$$$ pic-two % split 50 % img_l images/tele1.jpg % img_r images/tele2.jpg %maxh_l -maxh550 %maxh_r -maxh550 %col_l bt %col_r t1
+
+---
+$$$ part-1 % split 40 % color1 t1 % align1 right %title1 #Run &amp; Test
+.fonth5[Polling via getUpdates()]
+
+$$$ part-2 % color2 t2 % align2 defaultalign 
+
+```bash
+*ltkabot$ TELEGRAM_TOKEN=123456789:CCOPd7weak7eyX-lmohZ8hZsYke5WPaaRMK bin/hubot -a telegram -n udjang
+[Sat Dec 03 2016 09:00:26 GMT+0700 (WIB)] INFO Telegram Adapter Bot 123456789:CCOPd7weak7eyX-lmohZ8hZsYke5WPaaRMK Loaded...
+[Sat Dec 03 2016 09:00:26 GMT+0700 (WIB)] INFO Telegram Adapter Started...
+[Sat Dec 03 2016 09:00:26 GMT+0700 (WIB)] WARNING Loading scripts from hubot-scripts.json is deprecated and will be removed in 3.0 (https://github.com/github/hubot-scripts/issues/1113) in favor of packages for each script.
+
+Your hubot-scripts.json is empty, so you just need to remove it.
+[Sat Dec 03 2016 09:00:26 GMT+0700 (WIB)] ERROR hubot-heroku-alive included, but missing HUBOT_HEROKU_KEEPALIVE_URL. `heroku config:set HUBOT_HEROKU_KEEPALIVE_URL=$(heroku apps:info -s  | grep web-url | cut -d= -f2)`
+[Sat Dec 03 2016 09:00:26 GMT+0700 (WIB)] INFO hubot-redis-brain: Using default redis on localhost:6379
+*[Sat Dec 03 2016 09:00:29 GMT+0700 (WIB)] INFO Telegram Bot Identified: LTKA Bot
+*[Sat Dec 03 2016 09:00:29 GMT+0700 (WIB)] WARNING It is advised to use the same bot name as your Telegram Bot: ltka_bot
+*[Sat Dec 03 2016 09:00:29 GMT+0700 (WIB)] WARNING Having a different bot name can result in an inconsistent experience when using @mentions
+
+[Sat Dec 03 2016 09:02:39 GMT+0700 (WIB)] INFO Receiving message_id: 1
+[Sat Dec 03 2016 09:02:49 GMT+0700 (WIB)] INFO Receiving message_id: 2
+[Sat Dec 03 2016 09:02:50 GMT+0700 (WIB)] INFO Reply message to room/message: 61999536/2
+[Sat Dec 03 2016 09:03:49 GMT+0700 (WIB)] INFO Receiving message_id: 4
+[Sat Dec 03 2016 09:03:50 GMT+0700 (WIB)] INFO Sending message to room: 61999536
+[Sat Dec 03 2016 09:04:39 GMT+0700 (WIB)] INFO Receiving message_id: 6
+[Sat Dec 03 2016 09:04:48 GMT+0700 (WIB)] INFO Sending message to room: 61999536
+[Sat Dec 03 2016 09:06:15 GMT+0700 (WIB)] INFO Receiving message_id: 8
+ 
+```
+
+$$$ part-3 
+
+---
+$$$ pic-two % split 50 % img_l images/tele3.jpg % img_r images/tele4.jpg %maxh_l -maxh550 %maxh_r -maxh550 %col_l bt %col_r t1
+
+---
+$$$ pic-two % split 50 % img_l images/tele5.jpg % img_r images/tele6.jpg %maxh_l -maxh550 %maxh_r -maxh550 %col_l t1 %col_r bt
+
+---
+$$$ slide-one % col t1 % title #.fonth5[Exercise] 
+.fonth5[
+.bluelight[Edit `external-scripts.json`, delete all modules or include only those you want to experiment with]<br/>
+Do some experiments inside `scripts/example.coffee`
+]
+
+
+---
+$$$ cover-05-section-gen %split 30 %maxh 550 %opc 7 % titleprop .fsize95[Refs] % bkgimg bkgs/kabel.jpg % logopic images/hubot4.png
+
+---
+# Refs
+
+.fonth5[
+1. [HUBOT - A Customizable, Life Embetterment Robot](https://hubot.github.com/)
+1. [HUBOT Documentation](https://hubot.github.com/docs/)
+1. [lukefx/hubot-telegram: Hubot adapter for Telegram](https://github.com/lukefx/hubot-telegram)
+1. [CoffeeScript](http://coffeescript.org/)
+1. [Bots: An introduction for developers](https://core.telegram.org/bots#botfather)
+]
+
+---
+$$$ cover-05-gen %split 40 %maxh 550 %opc 7 % titleprop .fsize95[END] % authorprop [Eueung Mulyana](https://github.com/eueung) % linkprop https://eueung.github.io/112016/hubot % otherprop CodeLabs | [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) % bkgimg bkgs/kabel.jpg % logopic images/hubot4.png
+

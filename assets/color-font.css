@@ -24,7 +24,8 @@ a {
 }
 
 .uline {text-decoration: underline;}
-.xkcd_font { font-family: 'humorsans'; font-size: 2.0em; font-weight: normal;}
+.xkcd_font { font-family: 'humorsans' !important; font-size: 2.0em; font-weight: normal;}
+.xkcd_font h1 { font-family: 'humorsans' !important; font-size: 2.0em; font-weight: normal;}
 
 .red    { color: #FF4943; }
 .gray   { color: #787878; }
@@ -44,6 +45,9 @@ a {
 .fonth3 {font-size: 2.4em;}
 .fonth4 {font-size: 2em;}
 .fonth5 {font-size: 1.4em;}
+
+h1 .fsize95 {font-size: 95px !important;}
+h1 .fsize85 {font-size: 85px !important;}
 
 .done-true {
   text-decoration: line-through;

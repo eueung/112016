@@ -28,6 +28,17 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.figplaint-maxh550 img, .figplaint-maxh450 img, .figplaint-maxh350 img {
+  max-height: 550px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.figplaint-maxh450 img {
+  max-height: 450px;
+}
+.figplaint-maxh350 img {
+  max-height: 350px;
+}
 
 .figplainw img {
   width: 100%;
