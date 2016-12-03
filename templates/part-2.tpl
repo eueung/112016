@@ -1,7 +1,7 @@
 {{addtext1}}
 
 ]]
-.column_{{color2}}[.vmiddle.{{align2}}[
+.column_{{color2}}[.vmiddle.pushfront.{{align2}}[
 
 {{title2}}
 
