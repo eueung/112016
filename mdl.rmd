@@ -1,0 +1,2154 @@
+$$$ cover-05-gen %split 40 %maxh 350 %opc 7 %pretitle Material Design Lite % titleprop .fsize95[MDL - Examples] % authorprop [Eueung Mulyana](https://github.com/eueung) % linkprop https://eueung.github.io/112016/mdl % otherprop CodeLabs | [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) % bkgimg bkgs/output.jpg % logopic images/mdl-1.png
+---
+$$$ outline % fsize fonth4 % e1 |Introduction| % e2 |Example Case \#1| % e3 |Example Case \#2| 
+
+---
+$$$ cover-05-section-gen %split 40 %maxh 350 %opc 7 % titleprop .fsize85[Introduction] % bkgimg bkgs/output.jpg % logopic images/mdl-1.png
+
+---
+$$$ part-1 % split 40 % color1 t1 % align1 right %title1 #.fonth3[MDL]
+.fonth5[
+Material Design Lite (MDL) is a .bluelight[**library of components**] for web developers based on Google's Material Design Philosophy.
+]
+
+.yellow[**Material Design**] is a visual language that synthesizes the classic principles of good design with the innovation and possibility of technology and science.
+
+$$$ part-2 % color2 t2 % align2 defaultalign 
+
+**Material Design Lite** lets you add a .uline[Material Design] look and feel to your websites. It doesn't rely on any JavaScript frameworks and aims to optimize for cross-device use, gracefully degrade in older browsers, and offer an experience that is immediately accessible.
+
+The **MDL components** are created with CSS, JavaScript, and HTML. You can use the components to construct web pages and web apps that are attractive, consistent, and functional. Pages developed with MDL will adhere to modern web design principles like browser portability, device independence, and graceful degradation.
+
+The MDL component library includes new versions of .uline[common] .blue[**user interface**] controls such as buttons, check boxes, and text fields, adapted to follow Material Design concepts. The library also includes .uline[enhanced] and specialized .red[**features**] like cards, column layouts, sliders, spinners, tabs, typography, and more. 
+
+Ref: [Material Design Lite](https://getmdl.io/index.html)
+
+$$$ part-3 
+
+---
+$$$ part-1 % split 40 % color1 t1 % align1 right %title1 #.fonth4[MD+MDL]
+.fonth5[
+.bluelight[**Material Design**] is a unified system that combines theory, resources, and tools for crafting digital experiences.]
+
+.yellow[**Material**] is a methaphor, a system for uniting style, and motion under a consistent set of principles..
+
+$$$ part-2 % color2 t2 % align2 defaultalign 
+
+.fonth5[
+Material Design Lite is built to provide a **lightweight** and **basic** set of Material Design components and templates for web sites. The project does .uline[not] intend to provide structures to create all possible UX needs, but to provide a low-friction Material Design implementation you can build on. ]
+
+Even within Material Design itself, cards specifically, it is unfeasible to provide every combination in a seamless manner. When you find something not provided, such as dropdowns in the drawer, you may need to code your own component.
+
+The team is committed to providing a great experience to developers while staying true to the promise of lite.
+
+Ref: [Material Design](https://material.io/)
+
+$$$ part-3 
+
+---
+$$$ slide-one % col t1 % title #.fonth4[MDL] % text .fonth5[It's an implementation of the .bluelight[**Material Spec**] targeted at content sites. <br/> Only **27KB** gzipped. <br/> .yellow[How?] Vanilla CSS, HTML &amp; JS!]  <br/><br/> Ref: [@addyosmani](https://speakerdeck.com/addyosmani/material-design-for-the-web)
+
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Templates] % bkgimg images/mdlss-1.jpg
+
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Components] % bkgimg images/mdlss-2.jpg
+
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Styles] % bkgimg images/mdlss-3.jpg
+
+---
+$$$ slide-one % col t1 % title .fonth5[For the Following Examples] % text #MDL Version: .yellow[**1.2.1**] (8/Sept/2016)
+
+---
+$$$ cover-05-section-gen %split 40 %maxh 350 %opc 7 % titleprop .fsize85[Example \#1] % bkgimg bkgs/output.jpg % logopic images/mdl-1.png
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/ex1.jpg)
+
+.shadelightdark[.boxtitle1.noborder.center[
+#Template - ANDROID.COM
+]]
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<!doctype html>
+<html lang="en"><head>
+  ...
+
+  <!-- Page styles -->
+* <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+* <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+* <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>...</style>
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+*   <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="mdl-layout__header-row">...</div>
+    </div>
+*   <div class="android-drawer mdl-layout__drawer">...</div>
+*   <div class="android-content mdl-layout__content">
+      <a name="top"></a>
+      <div class="android-be-together-section mdl-typography--text-center">...</div>
+      <div class="android-screen-section mdl-typography--text-center">...</div>
+      <div class="android-wear-section">...</div>
+      <div class="android-customized-section">...</div>
+      <div class="android-more-section">...</div>
+      <footer class="android-footer mdl-mega-footer">...</footer>
+    </div>
+  </div>
+
+  <a...>View Source</a>
+* <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body></html>
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign %title2 #Enabling MDL
+
+#MDL Layout
+.fonth5[
+]
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+body {
+  margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+/* ---------------------------------------- */
+
+.android-link {
+  text-decoration: none;
+  color: #8bc34a !important;
+}
+
+.android-link:hover {
+  color: #7cb342 !important;
+}
+
+.android-link .material-icons {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+}
+/* ---------------------------------------- */
+
+.android-alt-link {
+  text-decoration: none;
+  color: #64ffda !important;
+  font-size: 16px;
+}
+
+.android-alt-link:hover {
+  color: #00bfa5 !important;
+}
+
+.android-alt-link .material-icons {
+  position: relative;
+  top: 6px;
+}
+/* ---------------------------------------- */
+
+.android-link-menu:hover {
+  cursor: pointer;
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5.pink100[
+**Custom CSS**
+]
+
+$$$ part-3 
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+  <div class="mdl-layout__header-row">
+*   <span class="android-title        mdl-layout-title"><img class="android-logo-image" src="images/android-logo.png"></span>
+*   <span class="android-mobile-title mdl-layout-title"><img class="android-logo-image" src="images/android-logo.png"></span>
+
+*   <div class="android-header-spacer mdl-layout-spacer"></div>
+*   <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+      <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field"><i class="material-icons">search</i></label>
+      <div class="mdl-textfield__expandable-holder"><input class="mdl-textfield__input" type="text" id="search-field"></div>
+*   </div>
+
+*   <div class="android-navigation-container">
+      <nav class="android-navigation mdl-navigation">
+        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
+        ...
+        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+      </nav>
+*   </div>
+
+*   <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button"><i class="material-icons">more_vert</i></button>
+*   <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+      <li class="mdl-menu__item">5.0 Lollipop</li>
+      ...
+      <li class="mdl-menu__item">Android History</li>
+*   </ul>
+  </div>
+</div>
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[header]**
+]
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+.android-header {
+  overflow: visible;
+  background-color: white;
+}
+
+.android-header .material-icons {
+  color: #767777 !important;
+}
+
+.android-header .mdl-layout__drawer-button {
+  background: transparent;
+  color: #767777;
+}
+
+.android-header .mdl-navigation__link {
+  color: #757575;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.android-navigation-container {
+  /* Simple hack to make the overflow happen to the left instead... */
+  direction: rtl;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 500px;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.android-navigation {
+  /* ... and now make sure the content is actually LTR */
+  direction: ltr;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 800px;
+}
+
+.android-search-box.is-focused + .android-navigation-container {
+  opacity: 0;
+  width: 100px;
+}
+
+.android-navigation .mdl-navigation__link {
+  display: inline-block;
+  height: 60px;
+  line-height: 68px;
+  background-color: transparent !important;
+  border-bottom: 4px solid transparent;
+}
+
+.android-navigation .mdl-navigation__link:hover {
+  border-bottom: 4px solid #8bc34a;
+}
+
+.android-search-box {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.android-more-button {
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.android-mobile-title {
+  display: none !important;
+}
+
+
+.android-logo-image {
+  height: 28px;
+  width: 140px;
+}
+
+.android-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.android-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .android-navigation-container {
+    display: none;
+  }
+
+  .android-title {
+    display: none !important;
+  }
+
+  .android-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .android.android-search-box.is-focused ~ .android-mobile-title,
+  .android-search-box.is-focused + .android-navigation-container + .android-mobile-title {
+    opacity: 0;
+  }
+
+  .android-more-button {
+    display: none;
+  }
+
+  .android-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .android-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[header]**
+]
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/mdlan-1.png)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<div class="android-drawer mdl-layout__drawer">
+* <span class="mdl-layout-title">
+*   <img class="android-logo-image" src="images/android-logo-white.png">
+* </span>
+
+* <nav class="mdl-navigation">
+    <a class="mdl-navigation__link" href="">Phones</a>
+    <a class="mdl-navigation__link" href="">Tablets</a>
+    ...
+    <a class="mdl-navigation__link" href="">Play</a>
+
+*   <div class="android-drawer-separator"></div>
+*   <span class="mdl-navigation__link" href="">Versions</span>
+    <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+    ...
+    <a class="mdl-navigation__link" href="">Android history</a>
+
+    <div class="android-drawer-separator"></div>
+    <span class="mdl-navigation__link" href="">Resources</span>
+    <a class="mdl-navigation__link" href="">Official blog</a>
+    ...
+    <div class="android-drawer-separator"></div>
+    <span class="mdl-navigation__link" href="">For developers</span>
+    <a class="mdl-navigation__link" href="">App developer resources</a>
+    ...
+* </nav>
+</div>
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[drawer]**
+]
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+.android-drawer {
+  border-right: none;
+}
+
+.android-drawer-separator {
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 8px 0;
+}
+
+.android-drawer .mdl-navigation__link.mdl-navigation__link {
+  font-size: 14px;
+  color: #757575;
+}
+
+.android-drawer span.mdl-navigation__link.mdl-navigation__link {
+  color: #8bc34a;
+}
+
+.android-drawer .mdl-layout-title {
+  position: relative;
+  background: #6ab344;
+  height: 160px;
+}
+
+.android-drawer .android-logo-image {
+  position: absolute;
+  bottom: 16px;
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[drawer]**
+]
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/mdlan-2.jpg)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<div class="android-be-together-section mdl-typography--text-center">
+* <div class="logo-font android-slogan">be together. not the same.</div>
+* <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
+
+* <div class="logo-font android-create-character">
+*   <a href=""><img src="images/andy.png"> create your android character</a>
+* </div>
+
+* <a href="#screens">
+*   <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons">expand_more</i></button>
+* </a>
+</div>
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+android-.yellow[**be-together**]-section
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+.android-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('images/slide01.jpg') center 30% no-repeat;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.android-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.android-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.android-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+.android-create-character a {
+  text-decoration: none;
+  color: #767777;
+  font-weight: 300;
+}
+
+.android-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #64ffda !important;
+  color: black !important;
+}
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .android-be-together-section {
+    height: 350px;
+  }
+
+  .android-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .android-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .android-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .android-create-character img {
+    height: 12px;
+  }
+
+  .android-fab {
+    display: none;
+  }
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+android-.yellow[**be-together**]-section <br/><br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/content1.png)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<div class="android-screen-section mdl-typography--text-center">
+  <a name="screens"></a>
+* <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
+* <div class="android-screens">
+    <div class="android-wear android-screen">
+      <a class="android-image-link" href="">
+*       <img class="android-screen-image" src="images/wear-silver-on.png">
+*       <img class="android-screen-image" src="images/wear-black-on.png">
+      </a>
+*     <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
+    </div>
+
+    <div class="android-phone android-screen">
+      <a class="android-image-link" href=""><img class="android-screen-image" src="images/nexus6-on.jpg"></a>
+      <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
+    </div>
+
+*   <div class="android-tablet android-screen">
+*     <a class="android-image-link" href=""><img class="android-screen-image" src="images/nexus9-on.jpg"></a>
+*     <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
+*   </div>
+
+    <div class="android-tv android-screen">
+      <a class="android-image-link" href=""><img class="android-screen-image" src="images/tv-on.jpg"></a>
+      <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
+    </div>
+    ...
+  </div>
+</div>
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_content**
+]
+android-.yellow[**screen**]-section
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+.android-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.android-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.android-screen {
+  text-align: center;
+}
+
+.android-screen .android-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.android-image-link {
+  text-decoration: none;
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_content**
+]
+android-.yellow[**screen**]-section
+<br/><br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/content2.png)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<div class="android-wear-section">
+  <div class="android-wear-band">
+    <div class="android-wear-band-text">
+*     <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
+
+*     <p class="mdl-typography--headline mdl-typography--font-thin">
+*       Android works perfectly with your favourite apps like Google Maps,
+*       Calendar and YouTube.
+*     </p>
+
+*     <p>
+*       <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
+*         See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
+*       </a>
+*     </p>
+    </div>
+  </div>
+</div>
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_content**
+]
+android-.yellow[**wear**]-section
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+.android-wear {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+.android-wear .android-screen-image {
+  width: 40%;
+  z-index: 1;
+}
+
+.android-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+.android-phone .android-screen-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.android-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+.android-tablet .android-screen-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.android-tablet .android-link {
+  display: block;
+  z-index: 2;
+}
+
+.android-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+.android-tv .android-screen-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.android-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+.android-auto .android-screen-image {
+  display: block;
+  height: 300px;
+  z-index: 1;
+}
+
+.android-wear-section {
+  position: relative;
+  background: url('images/wear.png') center top no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.android-wear-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.android-wear-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+.android-wear-band-text p {
+  padding-top: 8px;
+}
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .android-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_content**
+]
+android-.yellow[**wear**]-section
+<br/><br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/content3.png)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<div class="android-customized-section">
+  <div class="android-customized-section-text">
+*   <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
+
+*   <p class="mdl-typography--font-light">
+*     Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+*     <br>
+*     <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+*   </p>
+  </div>
+
+* <div class="android-customized-section-image"></div>
+</div>
+
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_content**
+]
+android-.yellow[**customized**]-section
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+.android-customized-section {
+  text-align: center;
+}
+
+.android-customized-section-text {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+  .android-customized-section-text p {
+    padding-top: 16px;
+  }
+
+.android-customized-section-image {
+  background: url('images/devices.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_content**
+]
+android-.yellow[**customized**]-section
+<br/><br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/content4.png)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<div class="android-more-section">
+  <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
+  <div class="android-card-container mdl-grid">
+    
+    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+*     <div class="mdl-card__media"><img src="images/more-from-1.png"></div>
+*     <div class="mdl-card__title"><h4 class="mdl-card__title-text">Get going on Android</h4></div>
+*     <div class="mdl-card__supporting-text">
+        <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
+*     </div>
+*     <div class="mdl-card__actions">
+         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+           Make the switch <i class="material-icons">chevron_right</i>
+         </a>
+*     </div>
+    </div>
+
+*   <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="mdl-card__media"><img src="images/more-from-4.png"></div>
+      <div class="mdl-card__title"><h4 class="mdl-card__title-text">Create your own Android character</h4></div>
+      <div class="mdl-card__supporting-text"><span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!  </span></div>
+      <div class="mdl-card__actions">
+         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+           androidify.com <i class="material-icons">chevron_right</i>
+         </a>
+      </div>
+*   </div>
+
+    ...
+  </div>
+</div>
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_content**
+]
+android-.yellow[**more**]-section
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+.android-more-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.android-more-section .android-section-title {
+  margin-left: 12px;
+  padding-bottom: 24px;
+}
+
+.android-card-container {
+}
+
+.android-card-container .mdl-card__media {
+  overflow: hidden;
+  background: transparent;
+}
+
+.android-card-container .mdl-card__media img {
+  width: 100%;
+}
+
+.android-card-container .mdl-card__title {
+  background: transparent;
+  height: auto;
+}
+
+.android-card-container .mdl-card__title-text {
+  color: black;
+  height: auto;
+}
+
+.android-card-container .mdl-card__supporting-text {
+  height: auto;
+  color: black;
+  padding-bottom: 56px;
+}
+
+.android-card-container .mdl-card__actions {
+  position: absolute;
+  bottom: 0;
+}
+
+.android-card-container .mdl-card__actions a {
+  border-top: none;
+  font-size: 16px;
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_content**
+]
+android-.yellow[**more**]-section
+<br/><br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/content5.png)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<footer class="android-footer mdl-mega-footer">
+* <div class="mdl-mega-footer--top-section">
+    <div class="mdl-mega-footer--left-section">
+      <button class="mdl-mega-footer--social-btn"></button> &nbsp;
+      <button class="mdl-mega-footer--social-btn"></button> &nbsp;
+      <button class="mdl-mega-footer--social-btn"></button>
+    </div>
+    <div class="mdl-mega-footer--right-section">
+      <a class="mdl-typography--font-light" href="#top">Back to Top <i class="material-icons">expand_less</i></a>
+    </div>
+* </div>
+
+* <div class="mdl-mega-footer--middle-section">
+    <p class="mdl-typography--font-light">Satellite imagery: 2014 Astrium, DigitalGlobe</p>
+    <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+* </div>
+
+* <div class="mdl-mega-footer--bottom-section">
+    <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+      Versions <i class="material-icons">arrow_drop_up</i>
+    </a>
+    <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+      <li class="mdl-menu__item">5.0 Lollipop</li><li class="mdl-menu__item">4.4 KitKat</li> ...
+    </ul>
+
+    <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">For Developers <i class="material-icons">arrow_drop_up</i></a><ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown"><li class="mdl-menu__item">App developer resources</li><li class="mdl-menu__item">Android Open Source Project</li> ... </ul>
+    <a class="android-link mdl-typography--font-light" href="">Blog</a>
+    <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+* </div>
+</footer>
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_content**
+]
+android-.yellow[**footer**]
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+.android-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+.android-footer a:hover {
+  color: #8bc34a;
+}
+
+.android-footer .mdl-mega-footer--top-section::after {
+  border-bottom: none;
+}
+
+.android-footer .mdl-mega-footer--middle-section::after {
+  border-bottom: none;
+}
+
+.android-footer .mdl-mega-footer--bottom-section {
+  position: relative;
+}
+
+.android-footer .mdl-mega-footer--bottom-section a {
+  margin-right: 2em;
+}
+
+.android-footer .mdl-mega-footer--right-section a .material-icons {
+  position: relative;
+  top: 6px;
+}
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .android-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_content**
+]
+android-.yellow[**footer**]
+<br/><br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/footer.png)
+
+---
+$$$ cover-05-section-gen %split 40 %maxh 350 %opc 7 % titleprop .fsize85[Example \#2] % bkgimg bkgs/output.jpg % logopic images/mdl-1.png
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/ex2a.jpg)
+
+.shadelightdark[.boxtitle1.noborder.center[
+#SitePoint - [@AntoniettaPerna](https://www.sitepoint.com/practical-introduction-material-design-lite-google/)
+]]
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/ex2b.jpg)
+
+.shadelightdark[.boxtitle1.noborder.center[
+#SitePoint - [@AntoniettaPerna](https://www.sitepoint.com/practical-introduction-material-design-lite-google/)
+]]
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Template Using Material Design Lite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+* <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300'>
+* <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+* <link rel='stylesheet prefetch' href='https://code.getmdl.io/1.2.1/material.indigo-pink.min.css'>
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+
+* <header class="mdl-layout__header">...</header>
+* <div class="mdl-layout__drawer">...</div>
+
+* <main class="mdl-layout__content">
+
+    <div class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+      <div class="page-content">
+        <div class="hero-section">...</div>
+        <div id="intro" class="mdl-grid intro-section">...</div>
+        <div class="mdl-grid mdl-grid--no-spacing fullwidth-panel">...</div>
+      </div>
+    </div>
+
+    <div class="mdl-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content">
+        <!-- CARDS  -->
+        <div class="mdl-grid cards-section">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-card mdl-shadow--2dp home-bringing-card">...</div>
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp play-card">...</div>
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp image-card">...</div>
+
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp litter-card">...</div>
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp diet-card">...</div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp card-small">...</div>
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp card-small">...</div>
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp card-small">...</div>
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp card-small">...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="mdl-grid mdl-grid--no-spacing">
+      <div class="mdl-cell mdl-cell--12-col contact-intro mdl-color--indigo-900">
+        <h2 class="mdl-typography--title mdl-typography--title-color-contrast mdl-typography--font-thin mdl-typography--text-center">Make your kittens happier with my tips</h2>
+      </div>
+
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone contact-panel form-panel mdl-color--indigo-50">...</div>
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone contact-panel address-panel mdl-typography--text-center mdl-color--indigo-100">...</div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="mdl-mini-footer mdl-color--indigo-200">...</footer>
+
+* </main>
+</div>
+
+* <script src='https://code.getmdl.io/1.2.1/material.min.js'></script>
+</body></html>
+```
+]
+$$$ part-2 % color2 t1 % align2 defaultalign %title2 #Enabling MDL
+
+#MDL Layout
+.fonth5[
+]
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* UTILITIES */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+
+/* TABS */
+
+.mdl-layout__tab-bar {
+  margin: 0 auto;
+  max-width: 300px;
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5.pink100[
+**Custom CSS**
+]
+
+$$$ part-3 
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<header class="mdl-layout__header">
+*  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title">Kaptain Kitty</span>
+*  </div>
+
+  <!-- Tabs -->
+*  <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+    <a href="#fixed-tab-1" class="mdl-layout__tab is-active">About</a>
+    <a href="#fixed-tab-2" class="mdl-layout__tab">Learn</a>
+*  </div>
+</header>
+
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[header]**
+]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/kitty1a.png)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<div class="mdl-layout__drawer">
+* <span class="mdl-layout-title">Kaptain Kitty</span>
+* <div class="avatar">
+    <img src="https://dl.dropboxusercontent.com/u/32494584/avatar.jpg" alt="Kaptain Kitty" class="avatar-img">
+* </div>
+
+* <div class="drawer-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur officiis animi, soluta ab deserunt dolore fugit voluptatem laboriosam, magni. Eligendi quia quasi qui cupiditate optio fugit vel, suscipit harum illum.
+* </div>
+</div>
+
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[drawer]**
+]
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+/* DRAWER */
+
+.mdl-layout__drawer-button,
+.mdl-layout__drawer-button i {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .mdl-layout__drawer-button {
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+  }
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto 2em;
+}
+
+.avatar-img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.drawer-text {
+  padding: 1em;
+  text-align: center;
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[drawer]**
+]
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/kitty2.jpg)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<div class="hero-section">
+  <div class="hero-text mdl-typography--text-center">
+
+*   <h1 class="mdl-typography--display-2">I'm Kaptain Kitty</h1>
+*   <p class="mdl-typography--display-1">
+      I' ll teach you loads about your kitten
+*   </p>
+
+*   <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent kitty-hero__text-button" href="#intro">
+      <i class="material-icons">keyboard_arrow_down</i>
+*   </a>
+
+  </div>
+</div>
+
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+
+\.mdl-layout\_\_tab-panel<br/>\#fixed-tab-1<br/>
+<br/>
+hero-section
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+/* HERO SECTION */
+
+.hero-section {
+  height: 100vh;
+  /* IE11 doesn't like min-height */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(63, 81, 181, 0.6);
+  background-image: -webkit-linear-gradient(rgba(63, 81, 181, 0.3), rgba(63, 81, 181, 0.3)), url(https://dl.dropboxusercontent.com/u/32494584/hero-bg.jpg);
+  background-image: linear-gradient(rgba(63, 81, 181, 0.3), rgba(63, 81, 181, 0.3)), url(https://dl.dropboxusercontent.com/u/32494584/hero-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.hero-text {
+  color: white;
+  margin: auto;
+}
+
+@media screen and (max-width: 580px) {
+  .hero-text p {
+    white-space: pre-line;
+  }
+}
+
+.kitty-hero__text-button {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+
+\.mdl-layout\_\_tab-panel<br/>\#fixed-tab-1<br/>
+<br/>
+hero-section<br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/kitty1b.png)
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```html
+<div id="intro" class="mdl-grid intro-section">
+* <div class="about-kitty mdl-cell mdl-cell--12-col">
+    <p class="mdl-typography--headline">
+      Welcome to Kaptain Kitty! This is a demo HTML template that accompanies an article for SitePoint. The article illustrates how to use the Material Design Lite library to build a web page. You're free to use this template as you like. All images on this
+      demo are courtesy of <a href="https://pixabay.com/">Pixabay.com</a>.
+    </p>
+* </div>
+
+* <div class="about-kitty mdl-cell mdl-cell--12-col">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorum consectetur natus sequi, est similique! Temporibus rem consequuntur laudantium, illo excepturi velit quas. Culpa ipsum dolor tempore accusantium sed iusto.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?</p>
+* </div>
+
+* <div class="about-kitty mdl-cell mdl-cell--5-col mdl-cell--1-col-tablet mdl-cell--hide-phone">
+    <div class="circle-container">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+* </div>
+
+* <div class="about-kitty mdl-cell mdl-cell--7-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+    <div class="topics-container">
+      <div class="topic">Feeding</div>
+      <div class="topic">Choosing the right vet</div>
+      <div class="topic">Keeping you kittens healthy</div>
+      <div class="topic">Adopting a kitten</div>
+      <div class="topic">Vaccinating your kitten</div>
+    </div>
+* </div>
+
+* <div class="about-kitty mdl-cell mdl-cell--12-col">
+    <p class="clearfix">
+      <img src="https://dl.dropboxusercontent.com/u/32494584/avatar.jpg" alt="Kaptain Kitty" class="embedded-img float-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorum consectetur natus sequi, est similique! Temporibus
+      rem consequuntur laudantium, illo excepturi velit quas. Culpa ipsum dolor tempore accusantium sed iusto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt
+      laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta aliquid, inventore a ullam excepturi similique sit, nobis incidunt laboriosam amet maxime iusto nam facilis possimus quo optio? Dolor, et?</p>
+* </div>
+</div>
+```
+]
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+
+\.mdl-layout\_\_tab-panel<br/> \#fixed-tab-1<br/>
+<br/>
+intro-section
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+/* ABOUT KITTY INTRO + CARDS */
+
+.intro-section,
+.cards-section {
+  max-width: 960px;
+}
+
+/* ABOUT KITTY INTRO */
+
+.intro-section {
+  padding: 5em 2em 5em;
+}
+
+.about-kitty p {
+  max-width: 640px;
+  margin: auto;
+}
+
+.circle-container {
+  width: 100%;
+  min-height: 100px;
+  padding: 2em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.circle-container .circle {
+  height: 16px;
+  width: 16px;
+  background-color: #c51162;
+  border-radius: 50%;
+  margin: 0 3px 9px;
+}
+
+.topics-container {
+  padding: 2em 0;
+}
+
+.topics-container .topic {
+  font-size: 20px;
+  margin: 0 2px 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .topics-container .topic {
+    margin-bottom: 0.5em;
+  }
+}
+
+.embedded-img {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0.5em;
+  border-radius: 50%;
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+
+\.mdl-layout\_\_tab-panel<br/> \#fixed-tab-1<br/>
+<br/>
+intro-section<br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/kitty3.png)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<div class="mdl-grid mdl-grid--no-spacing fullwidth-panel">
+* <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center quote-panel">
+    <blockquote>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorum consectetur natus sequi, est similique! Temporibus rem consequuntur laudantium, illo excepturi velit quas. Culpa ipsum dolor tempore accusantium sed iusto.
+      </p>
+      <footer>
+        - <cite>Happy Kitten Owner</cite>
+      </footer>
+    </blockquote>
+* </div>
+</div>
+
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+
+\.mdl-layout\_\_tab-panel<br/>\#fixed-tab-1<br/>
+<br/>
+quote-panel
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+/* FULLWIDTH BACKGROUND SECTION */
+
+.fullwidth-panel {
+  color: white;
+  background-color: rgba(156, 39, 176, 0.6);
+}
+
+.fullwidth-panel p {
+  max-width: 640px;
+  margin: auto;
+}
+
+.quote-panel {
+  background-image: -webkit-linear-gradient(rgba(63, 81, 181, 0.5), rgba(63, 81, 181, 0.5)), url('https://dl.dropboxusercontent.com/u/32494584/panel-bg.jpg');
+  background-image: linear-gradient(rgba(63, 81, 181, 0.5), rgba(63, 81, 181, 0.5)), url('https://dl.dropboxusercontent.com/u/32494584/panel-bg.jpg');
+  background-position: center 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4em 2em 2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+@media screen and (min-width: 800px) {
+  .quote-panel {
+    background-position: center 0;
+    padding: 6em 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quote-panel {
+    background-position: center 8%;
+    padding: 10em 2em 8em;
+  }
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+
+\.mdl-layout\_\_tab-panel<br/>\#fixed-tab-1<br/>
+<br/>
+quote-panel<br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/kitty4.png)
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```html
+<div class="mdl-grid cards-section">
+* <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-card mdl-shadow--2dp home-bringing-card">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Bringing a kitten into your home</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo reiciendis corporis, optio animi autem, quisquam, temporibus sed deleniti officiis dolor eveniet tempore ad nulla deserunt laudantium, obcaecati esse! Officia.
+    </div>
+* </div>
+
+* <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp play-card">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Playing with your kitten</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo reiciendis corporis, optio animi autem, quisquam, temporibus sed deleniti officiis dolor eveniet tempore ad nulla deserunt laudantium, obcaecati esse! Officia.
+    </div>
+* </div>
+
+* <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp image-card">
+    <div class="mdl-card__actions">
+      <span class="image-card__title">KaptainKitty.jpg</span>
+    </div>
+* </div>
+
+* <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp litter-card">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Taking care of a litter of kittens</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo reiciendis corporis, optio animi autem, quisquam, temporibus sed deleniti officiis dolor eveniet tempore ad nulla deserunt laudantium, obcaecati esse! Officia.
+    </div>
+* </div>
+
+* <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp diet-card">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Healthy diet for your kitten</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo reiciendis corporis, optio animi autem, quisquam, temporibus sed deleniti officiis dolor eveniet tempore ad nulla deserunt laudantium, obcaecati esse! Officia.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">Learn about feeding</a>
+    </div>
+* </div>
+
+* <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp card-small">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Kitten behavior</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo reiciendis corporis, optio animi autem, quisquam, temporibus sed deleniti officiis dolor eveniet tempore ad nulla deserunt laudantium, obcaecati esse! Officia.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">More on behavior</a>
+    </div>
+* </div>
+
+* <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp card-small">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Finding a vet</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo reiciendis corporis, optio animi autem, quisquam, temporibus sed deleniti officiis dolor eveniet tempore ad nulla deserunt laudantium, obcaecati esse! Officia.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">More on finding a vet </a>
+    </div>
+* </div>
+
+* <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp card-small">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Toys for kittens</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo reiciendis corporis, optio animi autem, quisquam, temporibus sed deleniti officiis dolor eveniet tempore ad nulla deserunt laudantium, obcaecati esse! Officia.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">More on toys</a>
+    </div>
+* </div>
+
+* <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp card-small">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Adopting a kitten</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo reiciendis corporis, optio animi autem, quisquam, temporibus sed deleniti officiis dolor eveniet tempore ad nulla deserunt laudantium, obcaecati esse! Officia.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">More on adopting </a>
+    </div>
+* </div>
+</div>
+
+
+```
+]
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+
+\.mdl-layout\_\_tab-panel<br/> \#fixed-tab-2<br/>
+<br/>
+cards-section
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+/* CARDS SECTION */
+
+.cards-section {
+  padding: 5em 0;
+}
+
+.mdl-card__title {
+  min-height: 300px;
+  color: white;
+}
+
+.home-bringing-card .mdl-card__title {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://dl.dropboxusercontent.com/u/32494584/kitten-home.jpg') center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://dl.dropboxusercontent.com/u/32494584/kitten-home.jpg') center / cover;
+}
+
+.play-card .mdl-card__title {
+  background: url('https://dl.dropboxusercontent.com/u/32494584/kitten-on-tree.jpg') center / cover;
+}
+
+.image-card {
+  background: url('https://dl.dropboxusercontent.com/u/32494584/image-card.jpg') center / cover;
+}
+
+.image-card > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.image-card__title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.litter-card .mdl-card__title {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://dl.dropboxusercontent.com/u/32494584/litter-card.jpg') center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://dl.dropboxusercontent.com/u/32494584/litter-card.jpg') center / cover;
+}
+
+.diet-card .mdl-card__title {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://dl.dropboxusercontent.com/u/32494584/diet-card.jpg') center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://dl.dropboxusercontent.com/u/32494584/diet-card.jpg') center / cover;
+}
+
+.card-small {
+  min-height: auto;
+}
+
+.card-small > .mdl-card__title {
+  color: rgba(0, 0, 0, 0.87);
+  height: auto;
+  min-height: auto;
+}
+
+.card-small .mdl-card__title-text {
+  font-size: 16px;
+}
+
+.card-small .mdl-card__title-text:before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.5em;
+  width: 18px;
+  height: 18px;
+  background-color: #c51162;
+  border-radius: 50%;
+}
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+
+\.mdl-layout\_\_tab-panel<br/> \#fixed-tab-2<br/>
+<br/>
+cards-section<br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/kitty5.png)
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```html
+<div class="mdl-grid mdl-grid--no-spacing">
+* <div class="mdl-cell mdl-cell--12-col contact-intro mdl-color--indigo-900">
+    <h2 class="mdl-typography--title mdl-typography--title-color-contrast mdl-typography--font-thin mdl-typography--text-center">Make your kittens happier with my tips</h2>
+* </div>
+
+* <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone contact-panel form-panel mdl-color--indigo-50">
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="name">
+        <label class="mdl-textfield__label" for="name">Your name</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="email" id="email">
+        <label class="mdl-textfield__label" for="email">Your email</label>
+      </div>
+      <div class="button-container clearfix">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent subscribe-button">
+          Join my fans
+        </button>
+      </div>
+    </form>
+* </div>
+
+* <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone contact-panel address-panel mdl-typography--text-center mdl-color--indigo-100">
+    <p class="mdl-typography--title-color-contrast mdl-typography--text-nowrap mdl-typography--font-thin">
+      <i class="material-icons">email</i> <a href="mailto:info@captain.kitty.com">info@kaptain.kitty.com</a>
+    </p>
+
+    <p class="mdl-typography--title-color-contrast mdl-typography--text-nowrap mdl-typography--font-thin">
+      <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="twitter.com">twitter</a>
+      <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="plus.google.com">Google+</a>
+      <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="facebook.com">Facebook</a>
+    </p>
+* </div>
+</div>
+```
+]
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+contact-intro<br/>contact-panel<br/>
+
+$$$ part-3 
+
+---
+$$$ part-1-1 % split 70 % color1 t2 % align1 defaultalign 
+
+.fullcode[
+
+```css
+.contact-intro {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.contact-panel {
+  padding: 6em 4em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.mdl-textfield {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 800px) {
+  .subscribe-button {
+    float: right;
+  }
+}
+
+.address-panel {
+  background-color: #dbdef1;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.address-panel .material-icons {
+  position: relative;
+  top: 0.2em;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  background-color: #ff4081;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+/* ---------------------------- */
+
+.mdl-mini-footer,
+.mdl-mini-footer .mdl-logo,
+.mdl-mini-footer--link-list a,
+.mdl-mini-footer__link-list a {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+```
+]
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+contact-intro<br/>contact-panel<br/>
+.pink100[**Custom CSS**]
+
+$$$ part-3 
+
+---
+class: bkgpos_00 nopadding
+background-image: url(images/kitty6.png)
+
+---
+$$$ part-1 % split 70 % color1 t2 % align1 defaultalign 
+
+```html
+<footer class="mdl-mini-footer mdl-color--indigo-200">
+* <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Kaptain Kitty &ndash; designed by <a href="http://wpthememakeover.com">Maria Antonietta Perna</a></div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+    &copy; Maria Antonietta Perna 2016
+* </div>
+</footer>
+```
+
+$$$ part-2 % color2 t1 % align2 defaultalign 
+
+.fonth5[
+**mdl-layout\_\_.bluelight[content]**
+]
+footer<br/>
+
+$$$ part-3 
+
+---
+$$$ cover-05-section-gen %split 40 %maxh 350 %opc 7 % titleprop .fsize85[Refs] % bkgimg bkgs/output.jpg % logopic images/mdl-1.png
+
+---
+# Refs
+
+.fonth5[
+1. [Material Design Lite](https://getmdl.io)
+1. [Introduction - Material design - Material design guidelines](https://material.google.com)
+1. [Material Design](https://material.io/)
+1. Deck by @addyosmani - [Material Design for the Web](https://speakerdeck.com/addyosmani/material-design-for-the-web)
+1. [Resizer - Material Design](http://material.io/resizer/)
+1. [A Practical Introduction to Material Design Lite by Google](https://www.sitepoint.com/practical-introduction-material-design-lite-google/)
+1. [Google Design](https://design.google.com/)
+1. [Introduction - Material design - Material design guidelines](https://material.google.com/)
+1. [google/material-design-lite](https://github.com/google/material-design-lite)
+]
+
+---
+$$$ cover-05-gen %split 40 %maxh 350 %opc 7 % titleprop .fsize95[END] % authorprop [Eueung Mulyana](https://github.com/eueung) % linkprop https://eueung.github.io/112016/mdl % otherprop CodeLabs | [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) % bkgimg bkgs/output.jpg % logopic images/mdl-1.png
+
+

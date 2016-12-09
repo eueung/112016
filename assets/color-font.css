@@ -27,6 +27,7 @@ a {
 .xkcd_font { font-family: 'humorsans' !important; font-size: 2.0em; font-weight: normal;}
 .xkcd_font h1 { font-family: 'humorsans' !important; font-size: 2.0em; font-weight: normal;}
 
+.pink100   { color: #F8BBD0; }
 .red    { color: #FF4943; }
 .gray   { color: #787878; }
 .green  { color: #87A558; }

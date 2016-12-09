@@ -31,6 +31,9 @@
   border-left: white solid 0.5em;
   border-right: white solid 0em;
 }
+.noborder {
+  border-style: none !important;
+}
 .boxtitle2 {
   padding:1em;
   text-align: left;
