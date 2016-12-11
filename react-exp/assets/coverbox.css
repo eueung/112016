@@ -1,0 +1,59 @@
+.fgtransparent h1 {
+  color:rgba(255,255,255,0.8) !important;
+  text-shadow: none;
+}
+
+.shade {
+    padding: 0;
+}
+.shade  {
+    background-color:rgba(0,0,0,0.7);
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+}
+.shadelight  {
+    background-color:rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    padding: 0;
+}
+.shadelightdark  {
+    background-color:rgba(0,0,0,0.7);
+    color: white;
+    width: 100%;
+    padding: 0;
+}
+
+.boxtitle1 {
+  padding:1em;
+  text-align: left;
+  border-left: white solid 0.5em;
+  border-right: white solid 0em;
+}
+.noborder {
+  border-style: none !important;
+}
+.boxtitle2 {
+  padding:1em;
+  text-align: left;
+  border-left: white solid 0.5em;
+  border-right: white solid 0em;
+  border-bottom: white solid 0.5em;
+}
+
+.boxtitle3 {
+  padding:1em;
+  text-align: center;
+  border-left: white solid 0em;
+  border-right: white solid 0.5em;
+}
+.boxtitle4 {
+  padding:1em;
+  text-align: left;
+  border-bottom: #999 dashed 2px;
+}
+.add-left-border {
+  border-left: white solid 0.5em;
+}
+
