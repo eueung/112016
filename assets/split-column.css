@@ -17,6 +17,7 @@
 }
 .bkgpos_00 {
   background-position: 0 0;
+  background-size: cover;
 }
 .column_wt {
   position: relative;
