@@ -1,0 +1,67 @@
+$$$ cover-05-gen-fa %split 40 %pretitle ET-3010 % titleprop .fsize95[.yellow[Connected Services &amp; Cloud Computing]] % authorprop [Dr.-Ing. Eueung Mulyana](https://github.com/eueung) % linkprop https://eueung.github.io/112016/ws-ltka % otherprop Informational Stuff | [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) % bkgimg bkgs/batu.jpg % logo .fonth5[.fa-2x.fa-stack[<i class="fa fa-mixcloud fa-stack-2x fa-rotate-270"></i><i class="fa fa-code-fork fa-stack-2x fa-rotate-90"></i>]]
+---
+$$$ slide-one % col t1 % title #Doc Version: .yellow[**0.8**] % text .bluelight[Date: 14.12.2016]
+---
+$$$ outline % fsize fonth4 %e1 |Overview| %e2 |.bluelight[Final Project]| %e3 |.bluelight[Report &amp; Documentation]| %e4 |.bluelight[Student Activities]| %e5 |.yellow[**Next Step**]|
+---
+$$$ cover-05-section-gen-fa %split 40 %pretitle .yellow[ET-3010] 2013-2016 %titleprop .fsize85[Overview] % bkgimg bkgs/batu.jpg %logo .fonth5[.fa-2x.fa-stack[<i class="fa fa-mixcloud fa-stack-2x fa-rotate-270"></i><i class="fa fa-code-fork fa-stack-2x fa-rotate-90"></i>]]
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Course Website] %linkprop https://eueung.github.io/ET3010 %bkgimg images/ltka-web.jpg
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Lecture Notes] % bkgimg images/lnotes.jpg
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Lab Guide] % bkgimg images/lab.jpg
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Assignment] % bkgimg images/ltka-sample-assignment.jpg
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Project] % bkgimg images/g-01.jpg
+---
+$$$ slide-bkg-right-white %split 60 %title # .fonth5[Facility] %bkgimg images/galileo-gen2.jpg %text1 .fonth5[.red[**10x**] Intel **Galileo Gen 2** via Intel Higher Education Program **Grant**. Only .red[**6**] currently available for the lab/project.] %text2 Other SBCs/uControllers and electronic components were provided .uline[privately] (if ever used in the project/lab/demo).
+
+---
+$$$ cover-05-section-gen-fa %split 40 %titleprop .fsize85[Final Project] % bkgimg bkgs/batu.jpg %logo .fonth5[.fa-2x.fa-stack[<i class="fa fa-mixcloud fa-stack-2x fa-rotate-270"></i><i class="fa fa-code-fork fa-stack-2x fa-rotate-90"></i>]]
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Demo] % bkgimg images/g-09.jpg
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Presentation] % bkgimg images/g-02.jpg
+---
+class: bkgpos_00
+background-image: url(images/g-03.jpg)
+---
+class: bkgpos_00
+background-image: url(images/g-04.jpg)
+---
+class: bkgpos_00
+background-image: url(images/g-05.jpg)
+---
+class: bkgpos_00
+background-image: url(images/g-06.jpg)
+---
+class: bkgpos_00
+background-image: url(images/g-07.jpg)
+---
+class: bkgpos_00
+background-image: url(images/g-08.jpg)
+---
+$$$ cover-05-section-gen-fa %split 40 %titleprop .fsize85[Report &amp; Documentation] % bkgimg bkgs/batu.jpg %logo .fonth5[.fa-2x.fa-stack[<i class="fa fa-mixcloud fa-stack-2x fa-rotate-270"></i><i class="fa fa-code-fork fa-stack-2x fa-rotate-90"></i>]]
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Report] % bkgimg images/report.jpg
+---
+class: middle center
+
+<iframe width="720" height="540" src="https://www.youtube.com/embed/aZBEEOPYDMc" frameborder="0" allowfullscreen></iframe>
+---
+$$$ cover-05-section-gen-fa %split 40 %titleprop .fsize85[Student Activities] % bkgimg bkgs/batu.jpg %logo .fonth5[.fa-2x.fa-stack[<i class="fa fa-mixcloud fa-stack-2x fa-rotate-270"></i><i class="fa fa-code-fork fa-stack-2x fa-rotate-90"></i>]]
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Teamwork] % bkgimg images/act-01.jpg
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Telemotion] % bkgimg images/act-02a.jpg
+---
+class: bkgpos_00
+background-image: url(images/act-02b.jpg)
+---
+class: bkgpos_00
+background-image: url(images/act-02c.jpg)
+---
+$$$ cover-05-gen-fa %split 40 %titleprop .fsize95[END] % authorprop [Dr.-Ing. Eueung Mulyana](https://github.com/eueung) % linkprop https://eueung.github.io/112016/ws-ltka % otherprop Informational Stuff | [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) % bkgimg bkgs/batu.jpg % logo .fonth5[.fa-2x.fa-stack[<i class="fa fa-mixcloud fa-stack-2x fa-rotate-270"></i><i class="fa fa-code-fork fa-stack-2x fa-rotate-90"></i>]]
+
