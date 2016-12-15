@@ -1,6 +1,6 @@
 $$$ cover-05-gen-fa %split 40 %pretitle ET-3010 % titleprop .fsize95[.yellow[Connected Services &amp; Cloud Computing]] % authorprop [Dr.-Ing. Eueung Mulyana](https://github.com/eueung) % linkprop https://eueung.github.io/112016/ws-ltka % otherprop Informational Stuff | [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) % bkgimg bkgs/batu.jpg % logo .fonth5[.fa-2x.fa-stack[<i class="fa fa-mixcloud fa-stack-2x fa-rotate-270"></i><i class="fa fa-code-fork fa-stack-2x fa-rotate-90"></i>]]
 ---
-$$$ slide-one % col t1 % title #Doc Version: .yellow[**0.8**] % text .bluelight[Date: 14.12.2016]
+$$$ slide-one % col t1 % title #Doc Version: .yellow[**0.9**] % text .bluelight[Date: 15.12.2016]
 ---
 $$$ outline % fsize fonth4 %e1 |Overview| %e2 |.bluelight[Final Project]| %e3 |.bluelight[Report &amp; Documentation]| %e4 |.bluelight[Student Activities]| %e5 |.yellow[**Next Step**]|
 ---
@@ -45,7 +45,9 @@ background-image: url(images/g-08.jpg)
 ---
 $$$ cover-05-section-gen-fa %split 40 %titleprop .fsize85[Report &amp; Documentation] % bkgimg bkgs/batu.jpg %logo .fonth5[.fa-2x.fa-stack[<i class="fa fa-mixcloud fa-stack-2x fa-rotate-270"></i><i class="fa fa-code-fork fa-stack-2x fa-rotate-90"></i>]]
 ---
-$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Report] % bkgimg images/report.jpg
+$$$ slide-bkg-left-dark %split 40 %title # .fonth4[Types] %bkgimg images/pres-file.jpg %text1 .fonth4[.bluelight[**Assignment Report**]<br/>.bluelight[**Final Report**]</br>**Video**] %text2 <hr/>.fonth5[Final Report:<br/>] .bluelight[**Presentation File**]<br/>Written Project Report
+---
+$$$ cover-05-caption %split 40 %titleprop .fonth5.yellow[Written Project Report] % bkgimg images/report.jpg
 ---
 class: middle center
 
@@ -62,6 +64,45 @@ background-image: url(images/act-02b.jpg)
 ---
 class: bkgpos_00
 background-image: url(images/act-02c.jpg)
+---
+$$$ cover-05-section-gen-fa %split 40 %titleprop .fsize85.bluelight[Next Step] % bkgimg bkgs/batu.jpg %logo .fonth5[.fa-2x.fa-stack[<i class="fa fa-mixcloud fa-stack-2x fa-rotate-270"></i><i class="fa fa-code-fork fa-stack-2x fa-rotate-90"></i>]]
+---
+$$$ part-1 %split 40 %color1 t1 %align1 right %title1 # .fonth5[Issues &amp; Todos]
+$$$ part-2 %color2 t2 %align2 defaultalign
+.fonth4[
+- **ABET Capstone Design** (?)
+- Current Facts/Problems
+- Assessment &amp; Strategic Evaluation
+]
+ 
+$$$ part-3
+---
+$$$ part-1 %split 40 %color1 t1 %align1 right %title1 # .fonth5[Current Facts &amp; Problems]
+$$$ part-2 %color2 t2 %align2 defaultalign
+.fonth4[**Students**]
+.fonth5[
+- Broad Audience Spectrum
+- Lacking on Programming and/or Modern SW/HW Skill/Knowledge
+]
+
+.fonth4[**Facility**]
+.fonth5[
+- No institutional support (yet) -except for **legacy** lecture class-
+- No project tutors/assistants
+- In-class networking access facility is (always/historically) troublesome
+]
+
+$$$ part-3
+---
+$$$ part-1 %split 40 %color1 t1 %align1 right %title1 # .fonth5[Assessment &amp; Strategic Evaluation]
+$$$ part-2 %color2 t2 %align2 defaultalign
+.fonth4[Always Relevant Questions<br/>]
+.fonth5[
+- .blue[**Appropriate &amp; Fair Achievement Measures**] for individuals
+- Appropriate .blue[**Project Scope &amp; Terms**] Tuned to the (Expected) Level of Students
+] 
+ 
+$$$ part-3
 ---
 $$$ cover-05-gen-fa %split 40 %titleprop .fsize95[END] % authorprop [Dr.-Ing. Eueung Mulyana](https://github.com/eueung) % linkprop https://eueung.github.io/112016/ws-ltka % otherprop Informational Stuff | [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) % bkgimg bkgs/batu.jpg % logo .fonth5[.fa-2x.fa-stack[<i class="fa fa-mixcloud fa-stack-2x fa-rotate-270"></i><i class="fa fa-code-fork fa-stack-2x fa-rotate-90"></i>]]
 
