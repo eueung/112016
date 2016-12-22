@@ -71,3 +71,5 @@
 .top_70 { top: 70% !important;}
 .top_80 { top: 80% !important;}
 
+.bottom_abs { position: absolute; bottom: 0; }
+
